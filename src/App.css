@@ -1,5 +1,14 @@
 body{
     background-color:ghostwhite;
-    margin: auto;
-    max-width: 500px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.equals{
+    font-weight: bold;
+    font-size: 2rem;
 }
