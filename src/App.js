@@ -58,7 +58,7 @@ if(amounInFromCurrency){
     currencyOptions={currencyOptions}
     selectedCurrency={toCurrency}
     onChangeCurrency={e=> setToCurrency(e.target.value)}
-    onChangeAmount= {handleFromAmountChange}
+    onChangeAmount= {handletoAmountChange}
     amount={toAmount}
 
     />
