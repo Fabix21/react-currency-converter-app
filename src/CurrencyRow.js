@@ -17,7 +17,9 @@ export default function CurrencyRow(props) {
     const classes = useStyles();
 
     const {
-        currencyOptions
+        currencyOptions,
+        selectedCurrency,
+        onChangeCurrency
     } = props
 
   
@@ -25,13 +27,15 @@ export default function CurrencyRow(props) {
       
     <div>
        <form className={classes.root} noValidate autoComplete="off">
-       <TextField id="standard-basic" label="Enter value" />
+       <TextField id="standard-basic" label={selectedCurrency} /> 
 
         <TextField
           id="standard-select-currency"
-          select
+          select = {selectedCurrency}
+          value = {selectedCurrency}
           label="Select"
           helperText="Please select your currency"
+          onChange={onChangeCurrency}
         >
           {currencyOptions.map((option) => (
             <MenuItem key={option} value={option}>
@@ -39,9 +43,9 @@ export default function CurrencyRow(props) {
             </MenuItem>
           ))}
         </TextField>
-        </form>            
+        </form>    
      </div>
-
+    
     )
 }
 
