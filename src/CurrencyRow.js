@@ -19,7 +19,8 @@ export default function CurrencyRow(props) {
     const {
         currencyOptions,
         selectedCurrency,
-        onChangeCurrency
+        onChangeCurrency,
+        amount
     } = props
 
   
@@ -27,7 +28,7 @@ export default function CurrencyRow(props) {
       
     <div>
        <form className={classes.root} noValidate autoComplete="off">
-       <TextField id="standard-basic" label={selectedCurrency} /> 
+       <TextField id="standard-basic" label={selectedCurrency} value={amount} /> 
 
         <TextField
           id="standard-select-currency"
