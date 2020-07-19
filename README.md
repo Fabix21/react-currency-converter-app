@@ -14,6 +14,6 @@ Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Live preview
-You can check app, hosted on Heroku
+You can live check app, hosted on Heroku
 
 [Currency converter](https://react-material-currency-app.herokuapp.com/)
